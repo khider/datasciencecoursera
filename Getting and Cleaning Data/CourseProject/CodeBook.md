@@ -6,7 +6,7 @@
 * [Transformation](#trans)
 
 #<a name='data'> Data </a>
-The data is summarized in the text file `tidy_data.txt` (space*separated value.)
+The data is summarized in the text file `tidy_data.txt` (space-separated value.)
 
 The first rows list the names of the all the variables.
 
@@ -16,25 +16,15 @@ Each row contains, for a given subject and activity, 79 averaged signal measurem
 ### Identifiers <a name="identifiers"></a>
 
 * `subject`: Subject identifier
-* `activity`
-
-	Activity identifier, string with 6 possible values:
-	* `WALKING`: subject was walking
-	* `WALKING_UPSTAIRS`: subject was walking upstairs
-	* `WALKING_DOWNSTAIRS`: subject was walking downstairs
-	* `SITTING`: subject was sitting
-	* `STANDING`: subject was standing
-	* `LAYING`: subject was laying
+* `activity` corresponds to the following possible activities:
+	* `WALKING`
+	* `WALKING_UPSTAIRS`
+	* `WALKING_DOWNSTAIRS`
+	* `SITTING`
+	* `STANDING`
+	* `LAYING`
 
 ### Average of measurements <a name="average*measurements"></a>
-
-The measurements are classified in two domains:
-
-* Time-domain signals (variables prefixed by `timeDomain`), resulting from the capture of accelerometer and gyroscope raw signals.
-
-* Frequency-domain signals (variables prefixed by `frequencyDomain`), resulting from the application of a Fast Fourier Transform (FFT) to some of the time-domain signals.
-
-#### Time-domain signals
 
 * Average time-domain body acceleration in the X, Y and Z directions:
 
@@ -120,8 +110,6 @@ The measurements are classified in two domains:
 
 	* `timeDomainBodyGyroscopeJerkMagnitudeMean`
 	* `timeDomainBodyGyroscopeJerkMagnitudeStandardDeviation`
-
-#### Frequency-domain signals
 
 * Average frequency-domain body acceleration in the X, Y and Z directions:
 
